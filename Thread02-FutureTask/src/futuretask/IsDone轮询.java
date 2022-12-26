@@ -4,11 +4,7 @@ import java.util.concurrent.ExecutionException;
 import java.util.concurrent.FutureTask;
 import java.util.concurrent.TimeUnit;
 
-/**
- * @author : 小何
- * @Description :
- * @date : 2022-12-26 10:26
- */
+
 public class IsDone轮询 {
     public static void main(String[] args) throws ExecutionException, InterruptedException {
         FutureTask<String> task1 = new FutureTask<String>(() -> {
