@@ -8,7 +8,7 @@ public class Test {
                 "教练", "中国", 13);
 
 
-        SportMan s = new SportMan("阿根廷队", "梅西","男", LocalDate.of(1985, 10, 24),
+        FootballPlayer s = new FootballPlayer("阿根廷队", "梅西","男", LocalDate.of(1985, 10, 24),
                 "球员", 188.34, 4);
 
         System.out.println(c); // 直接输出对象，默认调用toString()

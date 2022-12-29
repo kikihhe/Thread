@@ -7,11 +7,11 @@ import java.time.LocalDate;
  * @Description :
  * @date : 2022-12-29 20:31
  */
-public class Person {
-    public Person() {
+public class WorldCup {
+    public WorldCup() {
     }
 
-    public Person(String team, String name, String sex, LocalDate birthday, String type) {
+    public WorldCup(String team, String name, String sex, int birthday, String type) {
         this.team = team;
         this.name = name;
         this.sex = sex;
@@ -26,9 +26,9 @@ public class Person {
     // 性别
     private String sex;
     // 出生年份
-    private LocalDate birthday; // LocalDate.of(2002, 1, 1)
+    private int birthday; // LocalDate.of(2002, 1, 1)
     // 类型
-    private String type; // new Person("足球运动员"/ "教练")
+    private String type; // new WorldCup("足球运动员"/ "教练")
 
     public String getTeam() {
         return team;
@@ -54,11 +54,11 @@ public class Person {
         this.sex = sex;
     }
 
-    public LocalDate getBirthday() {
+    public int getBirthday() {
         return birthday;
     }
 
-    public void setBirthday(LocalDate birthday) {
+    public void setBirthday(int birthday) {
         this.birthday = birthday;
     }
 

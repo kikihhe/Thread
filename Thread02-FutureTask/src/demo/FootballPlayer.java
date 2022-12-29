@@ -7,7 +7,7 @@ import java.time.LocalDate;
  * @Description :
  * @date : 2022-12-29 20:38
  */
-public class SportMan extends Person {
+public class FootballPlayer extends WorldCup {
     // 身高
     private double high;
     // 号码
@@ -21,12 +21,12 @@ public class SportMan extends Person {
         System.out.println(getName() + "铲球成功夺走了球权!!");
     }
 
-    public SportMan(double high, int number) {
+    public FootballPlayer(double high, int number) {
         this.high = high;
         this.number = number;
     }
 
-    public SportMan(String team, String name, String sex, LocalDate birthday, String type, double high, int number) {
+    public FootballPlayer(String team, String name, String sex, LocalDate birthday, String type, double high, int number) {
         super(team, name, sex, birthday, type);
         this.high = high;
         this.number = number;

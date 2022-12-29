@@ -7,7 +7,7 @@ import java.time.LocalDate;
  * @Description :
  * @date : 2022-12-29 20:34
  */
-public class Coach extends Person {
+public class Coach extends WorldCup {
     // 国籍
     private String country;
     // 执教年龄
@@ -22,7 +22,6 @@ public class Coach extends Person {
 
     public Coach(String team, String name, String sex, LocalDate birthday, String type, String country, int teachAge) {
         super(team, name, sex, birthday, type);
-
         this.country = country;
         this.teachAge = teachAge;
     }
