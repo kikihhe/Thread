@@ -10,4 +10,6 @@ public class Main {
         a -= a / 200 * 10;
         System.out.println(a);
     }
+
+
 }
