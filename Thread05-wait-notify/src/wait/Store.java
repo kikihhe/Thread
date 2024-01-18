@@ -20,9 +20,9 @@ public class Store {
      * @param count 一次生产的个数
      * @throws InterruptedException
      */
-    public void produce(int count) throws InterruptedException {
+    public synchronized void produce(int count) throws InterruptedException {
         while (count > 0) {
-            while (size >= capacity) {
+            if (size >= capacity) {
                 System.out.println("仓库满了!");
                 this.wait();
             }
@@ -40,9 +40,9 @@ public class Store {
      * 消费
      * @param count 消费数量
      */
-    public void consume(int count) throws InterruptedException {
+    public synchronized void consume(int count) throws InterruptedException {
         while (count > 0) {
-            while (size <= 0) {
+            if (size <= 0) {
                 System.out.println("仓库没东西了");
                 this.wait();
             }

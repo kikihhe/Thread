@@ -22,6 +22,7 @@ public class Main {
         for (int i = 0; i < 20; i++) {
             try {
                 executor.execute(new Task(i + ""));
+                executor.submit(new Task(i + ""));
             } catch (Throwable e) {
                 System.out.println("丢弃任务: " + (i));
             }
